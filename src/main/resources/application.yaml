@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: bus-tracker
+
+tmb:
+  cat:
+    app_id: ${TMB_CAT_APP_ID}
+    app_key: ${TMB_CAT_APP_KEY}
+    base_url: "https://api.tmb.cat/v1"
