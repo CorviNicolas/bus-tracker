@@ -22,7 +22,10 @@ public class TmbCatConfig {
     @Bean
     public WebClient tmbCatWebClient() {
         return WebClient.builder()
-                .defaultHeaders(httpHeaders -> httpHeaders.setContentType(MediaType.APPLICATION_JSON))
+                .defaultHeaders(httpHeaders -> {
+                    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+                    httpHeaders.set("User-Agent", "test");
+                })
                 .baseUrl(baseUrl)
                 .build();
     }
