@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 @Getter
 @Setter
-public class TmbCatConfig {
+public class TmbCatProviderConfig {
     private String appId;
     private String appKey;
     private String baseUrl;

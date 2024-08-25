@@ -25,7 +25,6 @@ public class IBusStopPrevisionResponse {
     public static class IBus {
         private String destination;
         private String routeId;
-        private String line;
         @JsonProperty(value = "text-ca")
         private String textCa;
         @JsonProperty(value = "t-in-s")
